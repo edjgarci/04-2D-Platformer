@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Assets/tilesheet_complete_2X.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
 [ext_resource path="res://Enemies/Golem.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Enemies/Wolf.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Action Videogame Background Music.mp3" type="AudioStream" id=6]
 [ext_resource path="res://StateMachine/Player_Container.gd" type="Script" id=12]
 
 [sub_resource type="NavigationPolygon" id=15]
@@ -222,7 +223,7 @@ script = ExtResource( 12 )
 position = Vector2( 3850, 954 )
 
 [node name="Wolf" parent="Enemy_Container" instance=ExtResource( 4 )]
-position = Vector2( 2501, 312 )
+position = Vector2( 271, 1076 )
 
 [node name="Bat" parent="Enemy_Container" instance=ExtResource( 5 )]
 position = Vector2( 6419, -1062 )
@@ -250,3 +251,7 @@ drag_margin_top = 0.1
 drag_margin_right = 0.1
 drag_margin_bottom = 0.1
 script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true

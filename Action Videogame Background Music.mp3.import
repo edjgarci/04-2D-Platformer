@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Action Videogame Background Music.mp3-04e96d1d1b9cb99214c5bcc804cacb5b.mp3str"
+
+[deps]
+
+source_file="res://Action Videogame Background Music.mp3"
+dest_files=[ "res://.import/Action Videogame Background Music.mp3-04e96d1d1b9cb99214c5bcc804cacb5b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
